@@ -1,34 +1,44 @@
-# crossing-capstone-project-
-A simple crossing capstone project, built using the python's built in turtle graphic library 
+# 🐢 Crossing Capstone Game
 
-🚀 Game Objective
-Guide the turtle from the bottom of the screen to the top without getting hit by a car. Reach the top successfully to score a point and increase the game's difficulty.
+A simple arcade-style game inspired by *Frogger*, built using Python’s built-in `turtle` graphics library.  
+The player controls a turtle character trying to cross a road while avoiding incoming cars.  
+The game gets harder with each level as the car speed increases.
 
-🎮 Game Controls
-Up Arrow (↑) → Move the turtle upward
+---
 
-🛠️ Project Structure & Module Descriptions
-main.py
+## 🚀 Game Objective
+
+Guide the turtle from the bottom of the screen to the top without getting hit by a car.  
+Reach the top successfully to score a point and increase the game's difficulty.
+
+---
+
+## 🎮 Game Controls
+
+- `Up Arrow (↑)` → Move the turtle upward
+
+---
+
+## 🛠️ Project Structure & Module Descriptions
+
+### `main.py`
+
 Handles the game setup and main loop:
 
-Initializes screen, turtle, cars, and scoreboard
+- Initializes screen, turtle, cars, and scoreboard
+- Runs the game loop:
+  - Generates and moves cars
+  - Detects collisions
+  - Checks for level completion
+- Increases difficulty by speeding up cars on each level
 
-Runs the game loop:
+---
 
-Generates and moves cars
+### `tortoise.py`
 
-Detects collisions
-
-Checks for level completion
-
-Increases difficulty by speeding up cars on each level
-
-tortoise.py
 Defines the player's character:
 
-python
-Copy
-Edit
+```python
 class Tortoise(Turtle):
     """
     Represents the player's turtle character that moves upward on each key press.
@@ -71,8 +81,8 @@ game_over() — Displays a "Game Over" message when a collision is detected.
 File	Description
 main.py	Main game loop and event handling
 tortoise.py	Player turtle logic
-car_manager.py	Car creation, motion, and difficulty control
-scoreboard.py	Score tracking and game over display
+car_manager.py	Car creation, motion, and difficulty logic
+scoreboard.py	Score tracking and game-over display
 
 📦 Requirements
 Python 3.x
