@@ -34,3 +34,22 @@ Handles the game setup and main loop:
 
 ---
 
+### `car_manager.py`
+
+Manages the generation of the cars accross the screen and it behaviors. 
+
+---
+### `car_manager.py`
+Manages game scoring and end game message:
+
+---
+## 💡 Learning Outcomes
+Object-Oriented Programming with classes
+
+Event-driven programming using key bindings
+
+Collision detection and sprite movement with Turtle
+
+Game loop mechanics and progressive difficulty.
+
+
